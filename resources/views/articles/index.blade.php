@@ -65,9 +65,22 @@
 <!-- Datatable plugins -->
 <script src="{{ asset('/sbadmin2/vendor/datatables/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('/sbadmin2/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
+
+<!-- Sweet Alert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
 <script>
 $(function () {
     $('#dataTable').DataTable();
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        text: 'Berhasil',
+        footer: 'Memasang script sweet alert',
+        showConfirmButton: false,
+        timer: 1500
+    });
+
 });
 </script>
 
